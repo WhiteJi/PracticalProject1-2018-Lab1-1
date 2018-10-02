@@ -78,7 +78,7 @@ public class Calculator {
 	 * @param result
 	 * This method prints out computation result.
 	 */
-	void print(String prefix, int result) {
+	void print(String prefix, double result) {
 		System.out.println(prefix + " " + result);
 	}
 
