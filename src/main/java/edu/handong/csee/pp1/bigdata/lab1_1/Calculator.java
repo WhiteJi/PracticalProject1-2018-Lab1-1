@@ -7,8 +7,9 @@
  * When you share your program to other developers,
  * other developers can import the package and can use classes and interfaces in the package
  */
-package edu.handong.csee.pp1.bigdata.lab1_1; 
+package edu.handong.csee.pp1.bigdata.lab1_1;
 
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author JC
@@ -91,7 +92,6 @@ public class Calculator {
 		countForAnyCompution++;
 		localCount++;
 		return first - second; // +였
-		
 	}
 
 	int multiply(int first, int second) {
@@ -100,10 +100,14 @@ public class Calculator {
 		return first * second;
 	}
 
-	int divide(int first, int second) {
+	double divide(int first, int second) {
 		countForAnyCompution++;
-		localCount++;
+		localCount++;Calculator myCalc = new Calculator();
+		if(second ==0)
+			return Double.NaN;
+		else
 		return first / second;
+			
 	}
 
 	int mod(int first, int second) {
