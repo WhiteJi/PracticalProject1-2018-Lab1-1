@@ -100,7 +100,7 @@ public class Calculator {
 		return first * second;
 	}
 
-	double divide(int first, int second) {
+	double divide(double first, double second) {
 		countForAnyCompution++;
 		localCount++;Calculator myCalc = new Calculator();
 		if(second ==0)
