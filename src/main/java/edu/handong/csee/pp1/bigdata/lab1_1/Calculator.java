@@ -90,7 +90,8 @@ public class Calculator {
 	int subtract(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
-		return first + second;
+		return first - second; // +였
+		
 	}
 
 	int multiply(int first, int second) {
