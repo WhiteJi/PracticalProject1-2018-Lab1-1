@@ -111,10 +111,14 @@ public class Calculator {
 			
 	}
 
-	int mod(int first, int second) {
+	double mod(double first, double second) {
 		countForAnyCompution++;
 		localCount++;Calculator myCalc = new Calculator();
-		return 0;
+		
+		if(second != 0)
+			return first % second;
+		else
+			return Double.NaN;
 	}
 
 	static int getCount() {
